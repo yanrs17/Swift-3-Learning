@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D52935B1DD0270D008F3ABA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D52935A1DD0270D008F3ABA /* AppDelegate.swift */; };
+		0D52935D1DD0270D008F3ABA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D52935C1DD0270D008F3ABA /* ViewController.swift */; };
+		0D5293601DD0270D008F3ABA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D52935E1DD0270D008F3ABA /* Main.storyboard */; };
+		0D5293621DD0270D008F3ABA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D5293611DD0270D008F3ABA /* Assets.xcassets */; };
+		0D5293651DD0270D008F3ABA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D5293631DD0270D008F3ABA /* LaunchScreen.storyboard */; };
+		0D5293701DD0270D008F3ABA /* Finding_User_LocationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D52936F1DD0270D008F3ABA /* Finding_User_LocationTests.swift */; };
+		0D52937B1DD0270D008F3ABA /* Finding_User_LocationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D52937A1DD0270D008F3ABA /* Finding_User_LocationUITests.swift */; };
+		0D52938A1DD0277F008F3ABA /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D5293891DD0277F008F3ABA /* CoreLocation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0D52936C1DD0270D008F3ABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D52934F1DD0270D008F3ABA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D5293561DD0270D008F3ABA;
+			remoteInfo = "Finding User Location";
+		};
+		0D5293771DD0270D008F3ABA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0D52934F1DD0270D008F3ABA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0D5293561DD0270D008F3ABA;
+			remoteInfo = "Finding User Location";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0D5293571DD0270D008F3ABA /* Finding User Location.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Finding User Location.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D52935A1DD0270D008F3ABA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D52935C1DD0270D008F3ABA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D52935F1DD0270D008F3ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D5293611DD0270D008F3ABA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D5293641DD0270D008F3ABA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D5293661DD0270D008F3ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D52936B1DD0270D008F3ABA /* Finding User LocationTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finding User LocationTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D52936F1DD0270D008F3ABA /* Finding_User_LocationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finding_User_LocationTests.swift; sourceTree = "<group>"; };
+		0D5293711DD0270D008F3ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D5293761DD0270D008F3ABA /* Finding User LocationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Finding User LocationUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D52937A1DD0270D008F3ABA /* Finding_User_LocationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Finding_User_LocationUITests.swift; sourceTree = "<group>"; };
+		0D52937C1DD0270D008F3ABA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D5293891DD0277F008F3ABA /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0D5293541DD0270D008F3ABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D52938A1DD0277F008F3ABA /* CoreLocation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5293681DD0270D008F3ABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5293731DD0270D008F3ABA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0D52934E1DD0270D008F3ABA = {
+			isa = PBXGroup;
+			children = (
+				0D5293591DD0270D008F3ABA /* Finding User Location */,
+				0D52936E1DD0270D008F3ABA /* Finding User LocationTests */,
+				0D5293791DD0270D008F3ABA /* Finding User LocationUITests */,
+				0D5293581DD0270D008F3ABA /* Products */,
+				0D5293881DD0277F008F3ABA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		0D5293581DD0270D008F3ABA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0D5293571DD0270D008F3ABA /* Finding User Location.app */,
+				0D52936B1DD0270D008F3ABA /* Finding User LocationTests.xctest */,
+				0D5293761DD0270D008F3ABA /* Finding User LocationUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0D5293591DD0270D008F3ABA /* Finding User Location */ = {
+			isa = PBXGroup;
+			children = (
+				0D52935A1DD0270D008F3ABA /* AppDelegate.swift */,
+				0D52935C1DD0270D008F3ABA /* ViewController.swift */,
+				0D52935E1DD0270D008F3ABA /* Main.storyboard */,
+				0D5293611DD0270D008F3ABA /* Assets.xcassets */,
+				0D5293631DD0270D008F3ABA /* LaunchScreen.storyboard */,
+				0D5293661DD0270D008F3ABA /* Info.plist */,
+			);
+			path = "Finding User Location";
+			sourceTree = "<group>";
+		};
+		0D52936E1DD0270D008F3ABA /* Finding User LocationTests */ = {
+			isa = PBXGroup;
+			children = (
+				0D52936F1DD0270D008F3ABA /* Finding_User_LocationTests.swift */,
+				0D5293711DD0270D008F3ABA /* Info.plist */,
+			);
+			path = "Finding User LocationTests";
+			sourceTree = "<group>";
+		};
+		0D5293791DD0270D008F3ABA /* Finding User LocationUITests */ = {
+			isa = PBXGroup;
+			children = (
+				0D52937A1DD0270D008F3ABA /* Finding_User_LocationUITests.swift */,
+				0D52937C1DD0270D008F3ABA /* Info.plist */,
+			);
+			path = "Finding User LocationUITests";
+			sourceTree = "<group>";
+		};
+		0D5293881DD0277F008F3ABA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0D5293891DD0277F008F3ABA /* CoreLocation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0D5293561DD0270D008F3ABA /* Finding User Location */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D52937F1DD0270D008F3ABA /* Build configuration list for PBXNativeTarget "Finding User Location" */;
+			buildPhases = (
+				0D5293531DD0270D008F3ABA /* Sources */,
+				0D5293541DD0270D008F3ABA /* Frameworks */,
+				0D5293551DD0270D008F3ABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Finding User Location";
+			productName = "Finding User Location";
+			productReference = 0D5293571DD0270D008F3ABA /* Finding User Location.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0D52936A1DD0270D008F3ABA /* Finding User LocationTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D5293821DD0270D008F3ABA /* Build configuration list for PBXNativeTarget "Finding User LocationTests" */;
+			buildPhases = (
+				0D5293671DD0270D008F3ABA /* Sources */,
+				0D5293681DD0270D008F3ABA /* Frameworks */,
+				0D5293691DD0270D008F3ABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D52936D1DD0270D008F3ABA /* PBXTargetDependency */,
+			);
+			name = "Finding User LocationTests";
+			productName = "Finding User LocationTests";
+			productReference = 0D52936B1DD0270D008F3ABA /* Finding User LocationTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0D5293751DD0270D008F3ABA /* Finding User LocationUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0D5293851DD0270D008F3ABA /* Build configuration list for PBXNativeTarget "Finding User LocationUITests" */;
+			buildPhases = (
+				0D5293721DD0270D008F3ABA /* Sources */,
+				0D5293731DD0270D008F3ABA /* Frameworks */,
+				0D5293741DD0270D008F3ABA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0D5293781DD0270D008F3ABA /* PBXTargetDependency */,
+			);
+			name = "Finding User LocationUITests";
+			productName = "Finding User LocationUITests";
+			productReference = 0D5293761DD0270D008F3ABA /* Finding User LocationUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0D52934F1DD0270D008F3ABA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0810;
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Ryan Ruoshui Yan";
+				TargetAttributes = {
+					0D5293561DD0270D008F3ABA = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					0D52936A1DD0270D008F3ABA = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0D5293561DD0270D008F3ABA;
+					};
+					0D5293751DD0270D008F3ABA = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 0D5293561DD0270D008F3ABA;
+					};
+				};
+			};
+			buildConfigurationList = 0D5293521DD0270D008F3ABA /* Build configuration list for PBXProject "Finding User Location" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0D52934E1DD0270D008F3ABA;
+			productRefGroup = 0D5293581DD0270D008F3ABA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0D5293561DD0270D008F3ABA /* Finding User Location */,
+				0D52936A1DD0270D008F3ABA /* Finding User LocationTests */,
+				0D5293751DD0270D008F3ABA /* Finding User LocationUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0D5293551DD0270D008F3ABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D5293651DD0270D008F3ABA /* LaunchScreen.storyboard in Resources */,
+				0D5293621DD0270D008F3ABA /* Assets.xcassets in Resources */,
+				0D5293601DD0270D008F3ABA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5293691DD0270D008F3ABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5293741DD0270D008F3ABA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0D5293531DD0270D008F3ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D52935D1DD0270D008F3ABA /* ViewController.swift in Sources */,
+				0D52935B1DD0270D008F3ABA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5293671DD0270D008F3ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D5293701DD0270D008F3ABA /* Finding_User_LocationTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0D5293721DD0270D008F3ABA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D52937B1DD0270D008F3ABA /* Finding_User_LocationUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0D52936D1DD0270D008F3ABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D5293561DD0270D008F3ABA /* Finding User Location */;
+			targetProxy = 0D52936C1DD0270D008F3ABA /* PBXContainerItemProxy */;
+		};
+		0D5293781DD0270D008F3ABA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0D5293561DD0270D008F3ABA /* Finding User Location */;
+			targetProxy = 0D5293771DD0270D008F3ABA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0D52935E1DD0270D008F3ABA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D52935F1DD0270D008F3ABA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0D5293631DD0270D008F3ABA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0D5293641DD0270D008F3ABA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0D52937D1DD0270D008F3ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0D52937E1DD0270D008F3ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0D5293801DD0270D008F3ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Finding User Location/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ryan.Finding-User-Location";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		0D5293811DD0270D008F3ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Finding User Location/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ryan.Finding-User-Location";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		0D5293831DD0270D008F3ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Finding User LocationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ryan.Finding-User-LocationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finding User Location.app/Finding User Location";
+			};
+			name = Debug;
+		};
+		0D5293841DD0270D008F3ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Finding User LocationTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ryan.Finding-User-LocationTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Finding User Location.app/Finding User Location";
+			};
+			name = Release;
+		};
+		0D5293861DD0270D008F3ABA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Finding User LocationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ryan.Finding-User-LocationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Finding User Location";
+			};
+			name = Debug;
+		};
+		0D5293871DD0270D008F3ABA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "Finding User LocationUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Ryan.Finding-User-LocationUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Finding User Location";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0D5293521DD0270D008F3ABA /* Build configuration list for PBXProject "Finding User Location" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D52937D1DD0270D008F3ABA /* Debug */,
+				0D52937E1DD0270D008F3ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0D52937F1DD0270D008F3ABA /* Build configuration list for PBXNativeTarget "Finding User Location" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D5293801DD0270D008F3ABA /* Debug */,
+				0D5293811DD0270D008F3ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0D5293821DD0270D008F3ABA /* Build configuration list for PBXNativeTarget "Finding User LocationTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D5293831DD0270D008F3ABA /* Debug */,
+				0D5293841DD0270D008F3ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		0D5293851DD0270D008F3ABA /* Build configuration list for PBXNativeTarget "Finding User LocationUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0D5293861DD0270D008F3ABA /* Debug */,
+				0D5293871DD0270D008F3ABA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0D52934F1DD0270D008F3ABA /* Project object */;
+}
