@@ -14,6 +14,7 @@
 		0D20DD701DD17837007A7B76 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D20DD6E1DD17837007A7B76 /* LaunchScreen.storyboard */; };
 		0D20DD7B1DD17837007A7B76 /* Advanced_SeguesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D20DD7A1DD17837007A7B76 /* Advanced_SeguesTests.swift */; };
 		0D20DD861DD17837007A7B76 /* Advanced_SeguesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D20DD851DD17837007A7B76 /* Advanced_SeguesUITests.swift */; };
+		0D625B6F1DD17A3000812B85 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D625B6E1DD17A3000812B85 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0D20DD811DD17837007A7B76 /* Advanced SeguesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Advanced SeguesUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D20DD851DD17837007A7B76 /* Advanced_SeguesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Advanced_SeguesUITests.swift; sourceTree = "<group>"; };
 		0D20DD871DD17837007A7B76 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0D625B6E1DD17A3000812B85 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				0D20DD651DD17837007A7B76 /* AppDelegate.swift */,
 				0D20DD671DD17837007A7B76 /* ViewController.swift */,
+				0D625B6E1DD17A3000812B85 /* SecondViewController.swift */,
 				0D20DD691DD17837007A7B76 /* Main.storyboard */,
 				0D20DD6C1DD17837007A7B76 /* Assets.xcassets */,
 				0D20DD6E1DD17837007A7B76 /* LaunchScreen.storyboard */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D625B6F1DD17A3000812B85 /* SecondViewController.swift in Sources */,
 				0D20DD681DD17837007A7B76 /* ViewController.swift in Sources */,
 				0D20DD661DD17837007A7B76 /* AppDelegate.swift in Sources */,
 			);
@@ -505,6 +509,7 @@
 				0D20DD8C1DD17837007A7B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D20DD8D1DD17837007A7B76 /* Build configuration list for PBXNativeTarget "Advanced SeguesTests" */ = {
 			isa = XCConfigurationList;
@@ -513,6 +518,7 @@
 				0D20DD8F1DD17837007A7B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		0D20DD901DD17837007A7B76 /* Build configuration list for PBXNativeTarget "Advanced SeguesUITests" */ = {
 			isa = XCConfigurationList;
@@ -521,6 +527,7 @@
 				0D20DD921DD17837007A7B76 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
