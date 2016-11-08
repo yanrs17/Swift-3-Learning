@@ -14,6 +14,7 @@
 		0DE8A33E1DD1633C00A7318A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE8A33C1DD1633C00A7318A /* LaunchScreen.storyboard */; };
 		0DE8A3491DD1633C00A7318A /* Location_AwareTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8A3481DD1633C00A7318A /* Location_AwareTests.swift */; };
 		0DE8A3541DD1633D00A7318A /* Location_AwareUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE8A3531DD1633D00A7318A /* Location_AwareUITests.swift */; };
+		0DE8A3631DD1661900A7318A /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DE8A3621DD1661900A7318A /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0DE8A34F1DD1633D00A7318A /* Location AwareUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Location AwareUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE8A3531DD1633D00A7318A /* Location_AwareUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location_AwareUITests.swift; sourceTree = "<group>"; };
 		0DE8A3551DD1633D00A7318A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DE8A3621DD1661900A7318A /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DE8A3631DD1661900A7318A /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +84,7 @@
 				0DE8A3471DD1633C00A7318A /* Location AwareTests */,
 				0DE8A3521DD1633D00A7318A /* Location AwareUITests */,
 				0DE8A3311DD1633C00A7318A /* Products */,
+				0DE8A3611DD1661900A7318A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -123,6 +127,14 @@
 				0DE8A3551DD1633D00A7318A /* Info.plist */,
 			);
 			path = "Location AwareUITests";
+			sourceTree = "<group>";
+		};
+		0DE8A3611DD1661900A7318A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0DE8A3621DD1661900A7318A /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
