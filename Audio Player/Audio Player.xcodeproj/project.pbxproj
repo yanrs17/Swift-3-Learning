@@ -14,6 +14,7 @@
 		0DA374CE1DD3DC2200196288 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DA374CC1DD3DC2200196288 /* LaunchScreen.storyboard */; };
 		0DA374D91DD3DC2200196288 /* Audio_PlayerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA374D81DD3DC2200196288 /* Audio_PlayerTests.swift */; };
 		0DA374E41DD3DC2200196288 /* Audio_PlayerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA374E31DD3DC2200196288 /* Audio_PlayerUITests.swift */; };
+		0DA374F21DD3DD8F00196288 /* sheep.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0DA374F11DD3DD8F00196288 /* sheep.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		0DA374DF1DD3DC2200196288 /* Audio PlayerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Audio PlayerUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DA374E31DD3DC2200196288 /* Audio_PlayerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Audio_PlayerUITests.swift; sourceTree = "<group>"; };
 		0DA374E51DD3DC2200196288 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DA374F11DD3DD8F00196288 /* sheep.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = sheep.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				0DA374C31DD3DC2200196288 /* AppDelegate.swift */,
 				0DA374C51DD3DC2200196288 /* ViewController.swift */,
 				0DA374C71DD3DC2200196288 /* Main.storyboard */,
+				0DA374F11DD3DD8F00196288 /* sheep.mp3 */,
 				0DA374CA1DD3DC2200196288 /* Assets.xcassets */,
 				0DA374CC1DD3DC2200196288 /* LaunchScreen.storyboard */,
 				0DA374CF1DD3DC2200196288 /* Info.plist */,
@@ -232,6 +235,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA374F21DD3DD8F00196288 /* sheep.mp3 in Resources */,
 				0DA374CE1DD3DC2200196288 /* LaunchScreen.storyboard in Resources */,
 				0DA374CB1DD3DC2200196288 /* Assets.xcassets in Resources */,
 				0DA374C91DD3DC2200196288 /* Main.storyboard in Resources */,
