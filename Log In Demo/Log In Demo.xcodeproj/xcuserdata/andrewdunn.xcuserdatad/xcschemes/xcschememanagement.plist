@@ -4,7 +4,7 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Log In.xcscheme</key>
+		<key>Log In Demo.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
 			<integer>0</integer>
@@ -12,7 +12,7 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0D977B9E1DD52B2F0049BACB</key>
+		<key>C8F140941D2AC8B100D6ACE9</key>
 		<dict>
 			<key>primary</key>
 			<true/>

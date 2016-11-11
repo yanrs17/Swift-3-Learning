@@ -18,19 +18,23 @@ class ViewController: UIViewController {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         // context is like a manager
         let context = appDelegate.persistentContainer.viewContext
-        let newUser = NSEntityDescription.insertNewObject(forEntityName: "Users", into: context)
-        newUser.setValue("Ruoshui", forKey: "username")
-        newUser.setValue("haha", forKey: "password")
-        newUser.setValue(21, forKey: "age")
-        
-        do {
-            try context.save()
-            print("Saved.")
-        } catch {
-            print("There was an error.")
-        }
+//        let newUser = NSEntityDescription.insertNewObject(forEntityName: "Users", into: context)
+//        newUser.setValue("R", forKey: "username")
+//        newUser.setValue("haha", forKey: "password")
+//        newUser.setValue(5, forKey: "age")
+//        
+//        do {
+//            try context.save()
+//            print("Saved.")
+//        } catch {
+//            print("There was an error.")
+//        }
         
         let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Users")
+        
+        // Optional: Add filters
+        request.predicate = NSPredicate(format: "username = %@", "R")
+        
         request.returnsObjectsAsFaults = false
         
         do {
@@ -40,12 +44,21 @@ class ViewController: UIViewController {
                 // NSFetchRequestResult can always be cast to NSManagedObject
                 // It is persistent
                 for result in results as! [NSManagedObject] {
-                    if let  username = result.value(forKey: "username") as? String {
+                    if let username = result.value(forKey: "username") as? String {
+                        
+                        context.delete(result)
+                        do {
+                            try context.save()
+                            print("Delete succeeded.")
+                        } catch {
+                            print("Delete failed.")
+                        }
+                        
                         print(username)
                     }
                 }
             } else {
-                print("No results")
+                print("No results found")
             }
         } catch {
             print("Couldn't fetch results")
