@@ -11,7 +11,24 @@ import UIKit
 import Parse
 
 class ViewController: UIViewController {
+    
+    var signupMode = true
 
+    @IBOutlet weak var emailTextField: UITextField!
+    @IBOutlet weak var passwordTextField: UITextField!
+    
+    @IBOutlet weak var signupOrLoginButton: UIButton!
+    
+    @IBOutlet weak var changeModeButton: UIButton!
+    @IBAction func signupOrLogin(_ sender: Any) {
+    }
+
+    @IBAction func changeMode(_ sender: Any) {
+        if signupMode {
+            signupOrLoginButton.titleLabel.text
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
