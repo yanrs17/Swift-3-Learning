@@ -1,0 +1,32 @@
+[
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": ".*reddit.*" // Put a regex here
+            // Any website contains name "reddit" will be blocked
+        }
+    },
+    {
+        "action": {
+            "type": "block"
+        },
+        "trigger": {
+            "url-filter": "https?://(www.)?cnn.*"
+            // Any website contains name "cnn" exclusively will be blocked
+            // Need refinement
+        }
+    },
+    {
+        "action": {
+            "type": "css-display-none",
+            // Only block some contents, not the whole page
+            "selector": "a[href*='www.reddit']"
+            // Search for links that contain "www.reddit"
+        },
+        "trigger": {
+            "url-filter": ".*"
+        }
+    }
+]
