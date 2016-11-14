@@ -7,27 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D73AF741DD9320E007AE8B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D73AF731DD9320E007AE8B0 /* AppDelegate.swift */; };
-		0D73AF761DD9320E007AE8B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D73AF751DD9320E007AE8B0 /* ViewController.swift */; };
-		0D73AF791DD9320E007AE8B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D73AF771DD9320E007AE8B0 /* Main.storyboard */; };
-		0D73AF7B1DD9320E007AE8B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D73AF7A1DD9320E007AE8B0 /* Assets.xcassets */; };
-		0D73AF7E1DD9320E007AE8B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D73AF7C1DD9320E007AE8B0 /* LaunchScreen.storyboard */; };
-		0D73AF861DD932A3007AE8B0 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0D73AF851DD932A3007AE8B0 /* GoogleService-Info.plist */; };
+		0D73AF941DD937AC007AE8B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D73AF931DD937AC007AE8B0 /* AppDelegate.swift */; };
+		0D73AF961DD937AC007AE8B0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D73AF951DD937AC007AE8B0 /* ViewController.swift */; };
+		0D73AF991DD937AC007AE8B0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D73AF971DD937AC007AE8B0 /* Main.storyboard */; };
+		0D73AF9B1DD937AC007AE8B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0D73AF9A1DD937AC007AE8B0 /* Assets.xcassets */; };
+		0D73AF9E1DD937AC007AE8B0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0D73AF9C1DD937AC007AE8B0 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0D73AF701DD9320E007AE8B0 /* Analytics Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Analytics Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0D73AF731DD9320E007AE8B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		0D73AF751DD9320E007AE8B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		0D73AF781DD9320E007AE8B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		0D73AF7A1DD9320E007AE8B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0D73AF7D1DD9320E007AE8B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		0D73AF7F1DD9320E007AE8B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0D73AF851DD932A3007AE8B0 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		0D73AF901DD937AC007AE8B0 /* Alamofire.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Alamofire.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D73AF931DD937AC007AE8B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0D73AF951DD937AC007AE8B0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		0D73AF981DD937AC007AE8B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0D73AF9A1DD937AC007AE8B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0D73AF9D1DD937AC007AE8B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0D73AF9F1DD937AC007AE8B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0D73AF6D1DD9320E007AE8B0 /* Frameworks */ = {
+		0D73AF8D1DD937AC007AE8B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -37,73 +35,72 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0D73AF671DD9320E007AE8B0 = {
+		0D73AF871DD937AC007AE8B0 = {
 			isa = PBXGroup;
 			children = (
-				0D73AF721DD9320E007AE8B0 /* Analytics Demo */,
-				0D73AF711DD9320E007AE8B0 /* Products */,
+				0D73AF921DD937AC007AE8B0 /* Alamofire */,
+				0D73AF911DD937AC007AE8B0 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		0D73AF711DD9320E007AE8B0 /* Products */ = {
+		0D73AF911DD937AC007AE8B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0D73AF701DD9320E007AE8B0 /* Analytics Demo.app */,
+				0D73AF901DD937AC007AE8B0 /* Alamofire.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0D73AF721DD9320E007AE8B0 /* Analytics Demo */ = {
+		0D73AF921DD937AC007AE8B0 /* Alamofire */ = {
 			isa = PBXGroup;
 			children = (
-				0D73AF731DD9320E007AE8B0 /* AppDelegate.swift */,
-				0D73AF751DD9320E007AE8B0 /* ViewController.swift */,
-				0D73AF771DD9320E007AE8B0 /* Main.storyboard */,
-				0D73AF7A1DD9320E007AE8B0 /* Assets.xcassets */,
-				0D73AF7C1DD9320E007AE8B0 /* LaunchScreen.storyboard */,
-				0D73AF7F1DD9320E007AE8B0 /* Info.plist */,
-				0D73AF851DD932A3007AE8B0 /* GoogleService-Info.plist */,
+				0D73AF931DD937AC007AE8B0 /* AppDelegate.swift */,
+				0D73AF951DD937AC007AE8B0 /* ViewController.swift */,
+				0D73AF971DD937AC007AE8B0 /* Main.storyboard */,
+				0D73AF9A1DD937AC007AE8B0 /* Assets.xcassets */,
+				0D73AF9C1DD937AC007AE8B0 /* LaunchScreen.storyboard */,
+				0D73AF9F1DD937AC007AE8B0 /* Info.plist */,
 			);
-			path = "Analytics Demo";
+			path = Alamofire;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0D73AF6F1DD9320E007AE8B0 /* Analytics Demo */ = {
+		0D73AF8F1DD937AC007AE8B0 /* Alamofire */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0D73AF821DD9320E007AE8B0 /* Build configuration list for PBXNativeTarget "Analytics Demo" */;
+			buildConfigurationList = 0D73AFA21DD937AC007AE8B0 /* Build configuration list for PBXNativeTarget "Alamofire" */;
 			buildPhases = (
-				0D73AF6C1DD9320E007AE8B0 /* Sources */,
-				0D73AF6D1DD9320E007AE8B0 /* Frameworks */,
-				0D73AF6E1DD9320E007AE8B0 /* Resources */,
+				0D73AF8C1DD937AC007AE8B0 /* Sources */,
+				0D73AF8D1DD937AC007AE8B0 /* Frameworks */,
+				0D73AF8E1DD937AC007AE8B0 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Analytics Demo";
-			productName = "Analytics Demo";
-			productReference = 0D73AF701DD9320E007AE8B0 /* Analytics Demo.app */;
+			name = Alamofire;
+			productName = Alamofire;
+			productReference = 0D73AF901DD937AC007AE8B0 /* Alamofire.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		0D73AF681DD9320E007AE8B0 /* Project object */ = {
+		0D73AF881DD937AC007AE8B0 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0810;
 				ORGANIZATIONNAME = "Ryan Ruoshui Yan";
 				TargetAttributes = {
-					0D73AF6F1DD9320E007AE8B0 = {
+					0D73AF8F1DD937AC007AE8B0 = {
 						CreatedOnToolsVersion = 8.1;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 0D73AF6B1DD9320E007AE8B0 /* Build configuration list for PBXProject "Analytics Demo" */;
+			buildConfigurationList = 0D73AF8B1DD937AC007AE8B0 /* Build configuration list for PBXProject "Alamofire" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -111,55 +108,54 @@
 				en,
 				Base,
 			);
-			mainGroup = 0D73AF671DD9320E007AE8B0;
-			productRefGroup = 0D73AF711DD9320E007AE8B0 /* Products */;
+			mainGroup = 0D73AF871DD937AC007AE8B0;
+			productRefGroup = 0D73AF911DD937AC007AE8B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0D73AF6F1DD9320E007AE8B0 /* Analytics Demo */,
+				0D73AF8F1DD937AC007AE8B0 /* Alamofire */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0D73AF6E1DD9320E007AE8B0 /* Resources */ = {
+		0D73AF8E1DD937AC007AE8B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D73AF7E1DD9320E007AE8B0 /* LaunchScreen.storyboard in Resources */,
-				0D73AF861DD932A3007AE8B0 /* GoogleService-Info.plist in Resources */,
-				0D73AF7B1DD9320E007AE8B0 /* Assets.xcassets in Resources */,
-				0D73AF791DD9320E007AE8B0 /* Main.storyboard in Resources */,
+				0D73AF9E1DD937AC007AE8B0 /* LaunchScreen.storyboard in Resources */,
+				0D73AF9B1DD937AC007AE8B0 /* Assets.xcassets in Resources */,
+				0D73AF991DD937AC007AE8B0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0D73AF6C1DD9320E007AE8B0 /* Sources */ = {
+		0D73AF8C1DD937AC007AE8B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D73AF761DD9320E007AE8B0 /* ViewController.swift in Sources */,
-				0D73AF741DD9320E007AE8B0 /* AppDelegate.swift in Sources */,
+				0D73AF961DD937AC007AE8B0 /* ViewController.swift in Sources */,
+				0D73AF941DD937AC007AE8B0 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		0D73AF771DD9320E007AE8B0 /* Main.storyboard */ = {
+		0D73AF971DD937AC007AE8B0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0D73AF781DD9320E007AE8B0 /* Base */,
+				0D73AF981DD937AC007AE8B0 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		0D73AF7C1DD9320E007AE8B0 /* LaunchScreen.storyboard */ = {
+		0D73AF9C1DD937AC007AE8B0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				0D73AF7D1DD9320E007AE8B0 /* Base */,
+				0D73AF9D1DD937AC007AE8B0 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -167,7 +163,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		0D73AF801DD9320E007AE8B0 /* Debug */ = {
+		0D73AFA01DD937AC007AE8B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -217,7 +213,7 @@
 			};
 			name = Debug;
 		};
-		0D73AF811DD9320E007AE8B0 /* Release */ = {
+		0D73AFA11DD937AC007AE8B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -260,25 +256,25 @@
 			};
 			name = Release;
 		};
-		0D73AF831DD9320E007AE8B0 /* Debug */ = {
+		0D73AFA31DD937AC007AE8B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Analytics Demo/Info.plist";
+				INFOPLIST_FILE = Alamofire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Ryan.Analytics-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = Ryan.Alamofire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
-		0D73AF841DD9320E007AE8B0 /* Release */ = {
+		0D73AFA41DD937AC007AE8B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = "Analytics Demo/Info.plist";
+				INFOPLIST_FILE = Alamofire/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Ryan.Analytics-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = Ryan.Alamofire;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -287,24 +283,24 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0D73AF6B1DD9320E007AE8B0 /* Build configuration list for PBXProject "Analytics Demo" */ = {
+		0D73AF8B1DD937AC007AE8B0 /* Build configuration list for PBXProject "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0D73AF801DD9320E007AE8B0 /* Debug */,
-				0D73AF811DD9320E007AE8B0 /* Release */,
+				0D73AFA01DD937AC007AE8B0 /* Debug */,
+				0D73AFA11DD937AC007AE8B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0D73AF821DD9320E007AE8B0 /* Build configuration list for PBXNativeTarget "Analytics Demo" */ = {
+		0D73AFA21DD937AC007AE8B0 /* Build configuration list for PBXNativeTarget "Alamofire" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0D73AF831DD9320E007AE8B0 /* Debug */,
-				0D73AF841DD9320E007AE8B0 /* Release */,
+				0D73AFA31DD937AC007AE8B0 /* Debug */,
+				0D73AFA41DD937AC007AE8B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 0D73AF681DD9320E007AE8B0 /* Project object */;
+	rootObject = 0D73AF881DD937AC007AE8B0 /* Project object */;
 }

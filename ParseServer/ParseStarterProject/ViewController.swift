@@ -25,7 +25,7 @@ class ViewController: UIViewController {
 
     @IBAction func changeMode(_ sender: Any) {
         if signupMode {
-            signupOrLoginButton.titleLabel.text
+            signupOrLoginButton.titleLabel.text = "haha"
         }
     }
     
