@@ -48,4 +48,4 @@ func extractString(whole: String, before: String, after: String) -> String {
 
 extractString(whole: "hadfjasdlzzfjhe", before: "qq", after: "zz")
 
-
+arc4random()
