@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CFBundleDevelopmentRegion</key>
+	<string>en</string>
+	<key>CFBundleExecutable</key>
+	<string>$(EXECUTABLE_NAME)</string>
+	<key>CFBundleIdentifier</key>
+	<string>$(PRODUCT_BUNDLE_IDENTIFIER)</string>
+	<key>CFBundleInfoDictionaryVersion</key>
+	<string>6.0</string>
+	<key>CFBundleName</key>
+	<string>$(PRODUCT_NAME)</string>
+	<key>CFBundlePackageType</key>
+	<string>APPL</string>
+	<key>CFBundleShortVersionString</key>
+	<string>1.0</string>
+	<key>CFBundleVersion</key>
+	<string>1</string>
+	<key>LSRequiresIPhoneOS</key>
+	<true/>
+	<key>UILaunchStoryboardName</key>
+	<string>LaunchScreen</string>
+	<key>UIMainStoryboardFile</key>
+	<string>Main</string>
+	<key>UIRequiredDeviceCapabilities</key>
+	<array>
+		<string>armv7</string>
+	</array>
+	<key>UISupportedInterfaceOrientations</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+	</array>
+	<key>UISupportedInterfaceOrientations~ipad</key>
+	<array>
+		<string>UIInterfaceOrientationPortrait</string>
+		<string>UIInterfaceOrientationPortraitUpsideDown</string>
+		<string>UIInterfaceOrientationLandscapeLeft</string>
+		<string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+    <key>UIApplicationShortcutItems</key>
+    <array>
+        <dict>
+            <!-- Icon Type -->
+            <!-- Can be found here: https://developer.apple.com/reference/uikit/uiapplicationshortcuticontype -->
+            <!-- Use "UIApplicationShortIconType" + Specific name-->
+            <key>UIApplicationShortcutItemIconType</key>
+            <string>UIApplicationShortIconTypeAdd</string>
+            
+            <!-- Title -->
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>Add new user</string>
+            
+            <!-- Type -->
+            <!-- Ryan.Quick-Actions is the Bundle Identifier, can be found in General -->
+            <!-- .newuser is the attribute, can be changed -->
+            <key>UIApplicationShortcutItemType</key>
+            <string>Ryan.Quick-Actions.newuser</string>
+            
+            <!-- Extra: User Info -->
+            <key>UIApplicationShortcutItemUserInfo</key>
+            <dict>
+                <!-- Add username and password -->
+                <key>username</key>
+                <string>Ryan</string>
+            </dict>
+        </dict>
+        
+        <!-- Can have more than 1 -->
+        <dict>
+            <key>UIApplicationShortcutItemIconType</key>
+            <string>UIApplicationShortIconTypeSearch</string>
+            <key>UIApplicationShortcutItemTitle</key>
+            <string>Search Users</string>
+            <key>UIApplicationShortcutItemType</key>
+            <string>Ryan.Quick-Actions.search</string>
+        </dict>
+    </array>
+</dict>
+</plist>
