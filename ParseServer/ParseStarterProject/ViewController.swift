@@ -73,36 +73,21 @@ class ViewController: UIViewController {
                 
                 // Login mode
                 
-                PFUser.logInWithUsername(inBackground: emailTextField.text!, password: passwordTextField.text!, block: { (user, error) in
-                    
+                PFUser.logInWithUsername(inBackground: emailTextField.text!, password: passwordTextField.text!, block: {
+                    (user, error) in
                     self.activityIndicator.stopAnimating()
-                    UIApplication.shared.endIgnoringInteractionEvents() // UIApplication.shared() is now  UIApplication.shared
-                    
+                    UIApplication.shared.endIgnoringInteractionEvents()
                     if error != nil {
-                        
                         var displayErrorMessage = "Please try again later."
-                        
                         let error = error as NSError?
-                        
                         if let errorMessage = error?.userInfo["error"] as? String {
-                            
                             displayErrorMessage = errorMessage
-                            
                         }
-                        
                         self.createAlert(title: "Login Error", message: displayErrorMessage)
-                        
-                        
                     } else {
-                        
                         print("Logged in")
-                        
                     }
-                    
-                    
                 })
-                
-                
             }
             
             
