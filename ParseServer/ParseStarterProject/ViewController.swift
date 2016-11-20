@@ -66,6 +66,7 @@ class ViewController: UIViewController {
                         self.createAlert(title: "Signup Error", message: displayErrorMessage)
                     } else {
                         print("user signed up")
+                        self.performSegue(withIdentifier: "showUserTable", sender: self)
                     }
                 })
                 
@@ -86,16 +87,20 @@ class ViewController: UIViewController {
                         self.createAlert(title: "Login Error", message: displayErrorMessage)
                     } else {
                         print("Logged in")
+                        self.performSegue(withIdentifier: "showUserTable", sender: self)
                     }
                 })
             }
-            
-            
-            
+        }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        
+        if PFUser.current() != nil {
+            performSegue(withIdentifier: "showUserTable", sender: self)
         }
         
-        
-        
+        self.navigationController?.navigationBar.isHidden = true
     }
     
     @IBOutlet var signupOrLogin: UIButton!
