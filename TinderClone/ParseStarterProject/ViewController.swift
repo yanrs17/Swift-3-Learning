@@ -11,59 +11,75 @@ import UIKit
 import Parse
 
 class ViewController: UIViewController {
-
+    
+    var signupMode = true
+    @IBOutlet var errorLabel: UILabel!
+    @IBOutlet var usernameField: UITextField!
+    @IBOutlet var passwordField: UITextField!
+    @IBOutlet var signupOrLoginButton: UIButton!
+    @IBOutlet var changeSignupModeButton: UIButton!
+    @IBAction func signupOrLogin(_ sender: AnyObject) {
+        
+        if signupMode {
+            let user = PFUser()
+            user.username = usernameField.text
+            user.password = passwordField.text
+            user.signUpInBackground {
+                (success, error) in
+                if error != nil {
+                    var errorMessage = "Signup failed - please try again"
+                    let error = error as! NSError
+                    if let parseError = error.userInfo["error"] as? String {
+                        errorMessage = parseError
+                    }
+                    self.errorLabel.text = errorMessage
+                } else {
+                    print("Signed up")
+                }
+            }
+        } else {
+            PFUser.logInWithUsername(inBackground: usernameField.text!, password: passwordField.text!, block: {
+                (user, error) in
+                if error != nil {
+                    var errorMessage = "Signup failed - please try again"
+                    let error = error as NSError?
+                    if let parseError = error?.userInfo["error"] as? String {
+                        errorMessage = parseError
+                    }
+                    self.errorLabel.text = errorMessage
+                } else {
+                    print("Logged In")
+                }
+            })
+        }
+    }
+    
+    @IBAction func changeSignupMode(_ sender: AnyObject) {
+        if signupMode {
+            signupMode = false
+            signupOrLoginButton.setTitle("Log In", for: [])
+            changeSignupModeButton.setTitle("Sign Up", for: [])
+        } else {
+            signupMode = true
+            signupOrLoginButton.setTitle("Sign Up", for: [])
+            changeSignupModeButton.setTitle("Log In", for: [])
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-
-        // Get/Create an object
-        let user = PFObject(className: "Users")
         
-        // Save a value
-        user["name"] = "Ryan"
-        user.saveInBackground {
-            (success, error) -> Void in
-            if success {
-                print("Object has been saved.")
-            } else {
-                if error != nil {
-                    print (error!)
-                } else {
-                    print ("Error")
-                }
-            }
-        }
-        
-        // Get value with id
-        let query = PFQuery(className: "Users")
-        query.getObjectInBackground(withId: "ASGgI2HaeY") {
-            (object, error) in
+        let testObject = PFObject(className: "TestObject2")
+        testObject["foo"] = "bar"
+        testObject.saveInBackground { (success, error) -> Void in
             if error != nil {
                 print(error!)
             } else {
-                if let user = object {
-                    
-                    // Get value
-                    print(user)
-                    print(user["name"])
-                    
-                    // Update value
-                    // Important: Need to allow 'write' in ACL!!!
-                    user["name"] = "Ruoshui"
-                    user.saveInBackground(block: {
-                        (success, error) in
-                        if success {
-                            print("Saved")
-                        } else {
-                            print(error!)
-                        }
-                    })
-                    
-                }
+                print("Object has been saved.")
             }
         }
     }
-
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

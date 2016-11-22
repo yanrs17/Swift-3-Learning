@@ -8,6 +8,7 @@
 */
 
 import UIKit
+
 import Parse
 
 // If you want to use any of the UI components, uncomment this line
@@ -23,11 +24,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //--------------------------------------
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        
+        // Enable storing and querying data from Local Datastore.
+        // Remove this line if you don't want to use Local Datastore features or want to use cachePolicy.
         Parse.enableLocalDatastore()
+        
         let parseConfiguration = ParseClientConfiguration(block: { (ParseMutableClientConfiguration) -> Void in
-            ParseMutableClientConfiguration.applicationId = "d39ea8d187b306176c5b9652df292e087a29afdf"
-            ParseMutableClientConfiguration.clientKey = "3d4b300bceb53f32137a1b9aa59b684b850f7185"
+            ParseMutableClientConfiguration.applicationId = "myappid"
+            ParseMutableClientConfiguration.clientKey = "mymasterkey"
             ParseMutableClientConfiguration.server = "http://ec2-35-161-74-168.us-west-2.compute.amazonaws.com/parse"
         })
         
@@ -44,7 +47,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // PFFacebookUtils.initializeFacebook()
         // ****************************************************************************
 
-        PFUser.enableAutomaticUser()
+        //PFUser.enableAutomaticUser()
 
         let defaultACL = PFACL();
 
@@ -57,8 +60,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             // Track an app open here if we launch with a push, unless
             // "content_available" was used to trigger a background push (introduced in iOS 7).
             // In that case, we skip tracking here to avoid double counting the app-open.
-            /*
-            let preBackgroundPush = !application.responds(to: #selector(getter: UIApplication.backgroundRefreshStatus))
+
+            /* let preBackgroundPush = !application.responds(to: #selector(getter: UIApplication.backgroundRefreshStatus))
             let oldPushHandlerOnly = !self.responds(to: #selector(UIApplicationDelegate.application(_:didReceiveRemoteNotification:fetchCompletionHandler:)))
             var noPushPayload = false;
             if let options = launchOptions {
@@ -66,8 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
             if (preBackgroundPush || oldPushHandlerOnly || noPushPayload) {
                 PFAnalytics.trackAppOpened(launchOptions: launchOptions)
-            }
- */
+            } */
         }
 
         //
@@ -109,7 +111,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         installation.saveInBackground()
 
         PFPush.subscribeToChannel(inBackground: "") { (succeeded, error) in // (succeeded: Bool, error: NSError?) is now (succeeded, error)
-
             if succeeded {
                 print("ParseStarterProject successfully subscribed to push notifications on the broadcast channel.\n");
             } else {
