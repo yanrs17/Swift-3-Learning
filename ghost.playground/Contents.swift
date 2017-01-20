@@ -30,3 +30,7 @@ print (ghost.isAlive)
 
 print (ghost.isStrong())
 
+var a = "haa"
+
+a.characters.count
+
